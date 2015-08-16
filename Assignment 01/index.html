@@ -1,0 +1,946 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dine Feast</title>
+
+<!--Student Name: Muhamed Munsif Saheed
+	Student ID: 215015709 -->
+
+<!-- JQuery Mobile Code -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script> 
+        
+    <link rel="stylesheet" href="css/menu.css" /> 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+    <script type="text/javascript" src="js/mapLocation.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/mapLocation.css">
+    
+  <!-- ============================================================================================= -->
+
+	<link rel="stylesheet" type="text/css" href="css/imageplacement.css"> <!-- Auto re-sizing the images -->
+    
+    
+ 
+ <!-- ================================================================================================ -->
+ 
+ <link rel="shortcut icon" href="images/DFlogo.ico" > <!-- Logo to appear at the tab of the browser -->
+            
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-c">
+
+
+
+<!-- First Page -->
+
+<section id="page01" data-role="page">
+<header data-role="header"> 
+<div align="center">
+<img src="images/Logo.png" alt="Low resolution logo" width="234" height="91"/>&trade;
+</div>
+<nav data-role="navbar">
+
+<div id="NavigationBar">
+    <ul data-role="listview" data-inset="true">
+        <a href="#" class="ui-btn-active" data-icon="home" data-iconpos="right">HOME</a>
+        <a href="#page02">MENU</a>
+        <a href="#page03">FEEDBACK</a>
+        <a href="#page04">CONTACT US</a>
+        <a href="#page05">DEVLOPER'S INFO</a>
+    </ul>
+    
+  </div> 
+  </nav>
+</header>
+
+
+<img src="images/Banner.png" alt="Low resolution logo"/>
+ 
+
+<!--
+<div style="width: 288px; height: 100px; position: absolute; left: 7px; top: 170px;">
+<img src="images/Banner.png" width="422" height="224" alt=""/></div>
+  -->
+  
+  
+  
+  <!-- Footer-->
+
+<div data-role="footer" data-position="fixed">
+  <h3>&copy; Munsif Saheed 2015</h3>
+</div>
+</section>
+
+<!-- ============================================================================================= -->
+
+<section id="page02" data-role="page">
+
+<header data-role="header"> 
+<div align="center">
+<img src="images/Logo.png" alt="Low resolution logo" width="234" height="91"/>&trade;
+</div>
+<nav data-role="navbar">
+
+<div id="NavigationBar">
+    <ul data-role="listview" data-inset="true">
+        <a href="#page01" data-icon="home" data-iconpos="right">HOME</a>
+        <a href="#page02" class="ui-btn-active">MENU</a>
+        <a href="#page03">FEEDBACK</a>
+        <a href="#page04">CONTACT US</a>
+        <a href="#page05">DEVLOPER'S INFO</a>
+    </ul>
+
+  </div> 
+  </nav>
+</header>
+
+<ul data-role="listview">
+ 	<li data-role="divider">Items<span class="ui-li-count">06</span></li>
+   		 <!-- ====================== PIZZA MENU ========================================== -->
+		 <li><a href="#1">PIZZA</a><span class="ui-li-count">02</span>
+         	<ul>
+         		<li data-role="divider">Items<span class="ui-li-count">02</span></li>
+                
+                 <h1>&nbsp; &nbsp; Click on the Image to View the Recipe </h1>
+                                
+                <div data-role="content"><h3>Vegetable Pizza</h3>
+                <a href="#page0-1" data-rel="dialog">
+                <img src="images/Food/Pizza01.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Spicy Chicken Pizza</h3>
+                <a href="#page0-2" data-rel="dialog">
+                <img src="images/Food/Pizza02.jpg" alt=""/>
+                </a>
+            	</div>
+                
+         	</ul>
+         <!-- ====================== BURGERS MENU ========================================== -->
+         <li><a href="#2">BURGERS</a><span class="ui-li-count">05</span>
+         	<ul>
+         		<li data-role="divider">Items<span class="ui-li-count">05</span></li>
+                
+                 <h1>&nbsp; &nbsp; Click on the Image to View the Recipe </h1>
+                                
+                <div data-role="content"><h3>Crispy Chicken Burger</h3>
+                <a href="#page1-1" data-rel="dialog">
+                <img src="images/Food/Burger01.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Tender Beef Burger</h3>
+                <a href="#page1-2" data-rel="dialog">
+                <img src="images/Food/Burger02.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Turkey Burger</h3>
+                <a href="#page1-3" data-rel="dialog">
+                <img src="images/Food/Burger03.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Classic Beef Burger</h3>
+                <a href="#page1-4" data-rel="dialog">
+                <img src="images/Food/Burger04.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Double Puffed Beef Burger</h3>
+                <a href="#page1-5" data-rel="dialog">
+                <img src="images/Food/Burger05.jpg" alt=""/>
+                </a>
+            	</div>
+                
+         	</ul>
+            
+         <!-- ====================== NUGGETS AND FRIES MENU ========================================== -->
+         <li><a href="#3">NUGGETS AND FRIES</a><span class="ui-li-count">04</span>
+         	<ul>
+         		<li data-role="divider">Items<span class="ui-li-count">04</span></li>
+                
+                 <h1>&nbsp; &nbsp; Click on the Image to View the Recipe </h1>
+                                
+                <div data-role="content"><h3>Nugget Sticks</h3>
+                <a href="#page2-1" data-rel="dialog">
+                <img src="images/Food/Nuggets01.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Nugget Crunch (Tender Crisp)</h3>
+                <a href="#page2-2" data-rel="dialog">
+                <img src="images/Food/Nuggets02.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                              
+                <div data-role="content"><h3>Crispy French Fries</h3>
+                <a href="#page2-3" data-rel="dialog">
+                <img src="images/Food/French Fries.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Regaular Fries</h3>
+                <a href="#page2-4" data-rel="dialog">
+                <img src="images/Food/French Fries01.jpg" alt=""/>
+                </a>
+            	</div>
+                
+         	</ul>
+            
+         <!-- ====================== DESSERTS MENU ========================================== -->
+         <li><a href="#4">DESSERTS</a><span class="ui-li-count">05</span>
+         	<ul>
+         		<li data-role="divider">Items<span class="ui-li-count">05</span></li>
+                
+                <h1>&nbsp; &nbsp; Click on the Image to View the Recipe </h1>
+                                
+                <div data-role="content"><h3>Sponge Cake (Cheese Layers) with Cream and Strawberry</h3>
+                <a href="#page3-1" data-rel="dialog">
+                <img src="images/Food/Desert01.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Chocolate Brownie Cup Cake</h3>
+                <a href="#page3-2" data-rel="dialog">
+                <img src="images/Food/Desert02.jpg" alt=""/>
+                </a>
+            	</div>
+                                
+                <div data-role="content"><h3>Swiss Roll</h3>
+                <a href="#page3-3" data-rel="dialog">
+                <img src="images/Food/Desert03.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Chocolate Cupcake (Covered with Chocolate syrup) with fruits</h3>
+                <a href="#page3-4" data-rel="dialog">
+                <img src="images/Food/Desert04.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Fruits (Covered with Chocolate syrup) with Whipped Cream</h3>
+                <a href="#page3-5" data-rel="dialog">
+                <img src="images/Food/Desert05.jpg" alt=""/>
+                </a>
+            	</div>
+                
+         	</ul>
+        <!-- ====================== DRINKS MENU ========================================== --> 
+         <li><a href="#5">DRINKS</a><span class="ui-li-count">07</span>
+         	<ul>
+         		<li data-role="divider">Items<span class="ui-li-count">07</span></li>
+                
+                <h1>&nbsp; &nbsp; Click on the Image to View the Recipe </h1>
+                
+                <div data-role="content"><h3>Strawberry Milk</h3>
+                <a href="#page4-1" data-rel="dialog">
+                <img src="images/Food/Drinks02.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content1"><h3>Orange Juice</h3>
+                <a href="#page4-2" data-rel="dialog">
+                <img src="images/Food/Drinks03.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content2"><h3>Loda Cola</h3>
+                <a href="#page4-3" data-rel="dialog">
+                <img src="images/Food/Drinks04.png" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content3"><h3>Chocolate Milk Shake with Whip Cream</h3>
+                <a href="#page4-4" data-rel="dialog">
+                <img src="images/Food/Milk Shake01.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                
+                <div data-role="content4"><h3>Raspberry Milk Shake</h3>
+                <a href="#page4-5" data-rel="dialog">
+                <img src="images/Food/Milk Shake02.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                
+                <div data-role="content5"><h3>Ice Tea with Vanilla Ice-Cream</h3>
+                <a href="#page4-6" data-rel="dialog">
+                <img src="images/Food/Milk Shake03.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                
+                <div data-role="content6"><h3>Cafe Latte</h3>
+                <a href="#page4-7" data-rel="dialog">
+                <img src="images/Food/Tea.png" alt=""/>
+                </a>
+            	</div>
+                         
+            </ul>
+     <!-- ====================== SPECIALS MENU ========================================== -->   
+     
+       
+         <li><a href="#6">SPECIALS</a><span class="ui-li-count">02</span>
+ 			<ul>
+ 				<li data-role="divider">Items<span class="ui-li-count">02</span></li>
+                <div class="content" data-role="content">
+                
+                <h1>&nbsp; &nbsp; Click on the Image to View the Recipe </h1>
+                <h1><b>&nbsp; &nbsp; This Week's Special is a Delight </b></h1>
+                
+                <div data-role="content"><h3>BBQ Chicken with Fries in the side</h3>
+                <a href="#page5-1" data-rel="dialog">
+                <img src="images/Food/Special.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                <div data-role="content"><h3>Nasi Goreng</h3>
+                <a href="#page5-2" data-rel="dialog">
+                <img src="images/Food/Special02.jpg" alt=""/>
+                </a>
+            	</div>
+                
+                </div>
+			</ul> </li></li></li></li></li></ul>
+
+  
+<div data-role="footer" data-position="fixed">
+<h3>&copy; Munsif Saheed 2015</h3>
+</div>
+</section>
+
+<!-- ============================================================================================= -->
+
+<section id="page03" data-role="page">
+
+<header data-role="header"> 
+<div align="center">
+<img src="images/Logo.png" alt="Low resolution logo" width="234" height="91"/>&trade;
+</div>
+<nav data-role="navbar">
+
+<div id="NavigationBar">
+    <ul data-role="listview" data-inset="true">
+        <a href="#page01" data-icon="home" data-iconpos="right">HOME</a>
+        <a href="#page02">MENU</a>
+        <a href="#page03" class="ui-btn-active">FEEDBACK</a>
+        <a href="#page04">CONTACT US</a>
+        <a href="#page05">DEVLOPER'S INFO</a>
+    </ul>
+
+  </div> 
+  </nav>
+
+  
+</header>
+
+<div data-role="fieldcontain" class="ui-hide-label"><h4>Customer Name:</h4>
+	<label for="customername">Customer Name:</label>
+	<input type="text" name="customername" id="customername" value="" placeholder="customername"/>
+</div>
+
+<div data-role="fieldcontain" class="ui-hide-label"><h4>Contact Information:</h4>
+	<label for="contactinfo">Contact Information:</label>
+	<input type="text" name="contactinfo" id="contactinfo" value="" placeholder="contactinfo"/>
+</div>
+
+<label for="textarea-a">Text Area:</label>
+<textarea name="textarea" id="textarea-a">
+Please do let us know your experience with us...
+</textarea>
+
+<div data-role="controlgroup" data-type="horizontal" align="center">
+<a href="#page69" data-role="button" data-rel="dialog">Submit</a>
+</div>
+
+    </div>
+
+
+<div data-role="footer" data-position="fixed">
+<h3>&copy; Munsif Saheed 2015</h3>
+</div>
+</section>
+
+<!-- ============================================================================================= -->
+
+<section id="page04" data-role="page">
+
+<header data-role="header"> 
+<div align="center">
+<img src="images/Logo.png" alt="Low resolution logo" width="234" height="91"/>&trade;
+</div>
+<nav data-role="navbar">
+
+<div id="NavigationBar">
+    <ul data-role="listview" data-inset="true">
+        <a href="#page01" data-icon="home" data-iconpos="right">HOME</a>
+        <a href="#page02">MENU</a>
+        <a href="#page03">FEEDBACK</a>
+        <a href="#page04" class="ui-btn-active">CONTACT US</a>
+        <a href="#page05">DEVLOPER'S INFO</a>
+    </ul>
+
+  </div> 
+  </nav>
+</header>
+
+<img src="images/contact us.png"> 
+
+<div data-role="page" id="map-page" data-url="map-page">
+    <div data-role="header" data-theme="a">
+    <h1>Maps</h1>
+    </div>
+    <div role="main" class="ui-content" id="map-canvas">
+        <!-- map loads here... -->
+    </div>
+</div>
+
+
+<div data-role="footer" data-position="fixed">
+  <h3>&copy; Munsif Saheed 2015</h3>
+</div>
+</section>
+
+<!-- ============================================================================================= -->
+
+<section id="page05" data-role="page">
+
+<header data-role="header"> 
+<div align="center">
+<img src="images/Logo.png" alt="Low resolution logo" width="234" height="91"/>&trade;
+</div>
+<nav data-role="navbar">
+
+<div id="NavigationBar">
+    <ul data-role="listview" data-inset="true">
+        <a href="#page01" data-icon="home" data-iconpos="right">HOME</a>
+        <a href="#page02">MENU</a>
+        <a href="#page03">FEEDBACK</a>
+        <a href="#page04">CONTACT US</a>
+        <a href="#page05" class="ui-btn-active">DEVLOPER'S INFO</a>
+    </ul>
+
+  </div> 
+  </nav>
+</header>
+
+<img src="images/Developers Infor.png"/>
+
+<div data-role="footer" data-position="fixed">
+<h3>&copy; Munsif Saheed 2015</h3>
+</div>
+</section>
+
+<!-- ====================================DRINKS DIALOG PAGE========================================================= -->
+
+<!-- Strawberry Milk Shake Page -->
+<section id="page4-1" data-role="page">
+<header data-role="header">
+<h1><b><u>Strawberry Milk Shake Recipe</u></b></h1>
+<p>
+<h3>1/2 a cup of Milk</h3>
+<h3>1 pound of Strawberries, HULLED</h3>
+<h3>1 Pint of Vanilla Ice-Cream</h3>
+</header>
+</section>
+
+<!-- ============================================================================================= -->
+
+<!-- Orange Juice Page -->
+<section id="page4-2" data-role="page">
+<header data-role="header">
+<h1><b><u>Orange Juice Recipe</u></b></h1>
+<p>
+<h3>3 Oranges (Peeled)</h3>
+<h3>1 tsp of Honey</h3>
+<h3>1/4 cup of water</h3>
+</header>
+</section>
+
+<!-- ============================================================================================= -->
+
+<!-- Loda Cola Page -->
+<section id="page4-3" data-role="page">
+<header data-role="header">
+<h1><b><u>Loda Cola Recipe</u></b></h1>
+<p>
+<h3>FE Coca</h3>
+<h3>Citric Acid 3 oz</h3>
+<h3>Caffeine 1 oz</h3>
+<h3>Sugar</h3>
+<h3>Water</h3>
+<h3>Lime Juice 1 pints</h3>
+<h3>Vanilla 1 oz</h3>
+<h3>Caramel 1 oz</h3>
+<h3>Alcohol 8 oz</h3>
+<h3>Orange oil</h3>
+<h3>Lemon oil</h3>
+<h3>Nutmeg oil</h3>
+<h3>Corriander oil</h3>
+<h3>Neroli oil</h3>
+<h3>Cinnamon oil</h3>
+</header>
+</section>
+
+<!-- ============================================================================================= -->
+
+<!-- Chocolate Milk Shake With Whip Cream Page -->
+<section id="page4-4" data-role="page">
+<header data-role="header">
+<h1><b><u>Loda Cola Recipe</u></b></h1>
+<p>
+<h3>2 Chocolate Bars</h3>
+<h3>4 cups of Milk</h3>
+<h3>Whipping Cream</h3>
+<h3>Chocolate Shavings</h3>
+<h3>Chocolate syrup</h3>
+<h3>Chocolate Ice-Cream</h3>
+</header>
+</section>
+
+<!-- ============================================================================================= -->
+
+<!-- Raspberry Milk Shake Page -->
+<section id="page4-5" data-role="page">
+<header data-role="header">
+<h1><b><u>Raspberry Milk Shake Recipe</u></b></h1>
+<p>
+<h3>1 cup of Raspberries</h3>
+<h3>1/2 cup of vanilla almond milk (unsweetened)</h3>
+<h3>Vanilla Greek Yougurt</h3>
+</header>
+</section>
+
+<!-- ============================================================================================= -->
+
+<!-- Ice Tea with Vanilla Ice-Cream Page -->
+<section id="page4-6" data-role="page">
+<header data-role="header">
+<h1><b><u>Ice Tea with Vanilla Ice-Cream Recipe</u></b></h1>
+<p>
+<h3>2 Teaspoon Nescafe Coffee</h3>
+<h3>2 Teaspoon light brown sugar</h3>
+<h3>Water</h3>
+<h3>Milk</h3>
+<h3>Vanilla Ice-Cream</h3>
+</header>
+</section>
+
+<!-- ============================================================================================= -->
+
+<!-- Cafe Latte Page -->
+<section id="page4-7" data-role="page">
+<header data-role="header">
+<h1><b><u>Cafe Recipe</u></b></h1>
+<p>
+<h3>3 Teaspoon Nescafe Powder</h3>
+<h3>2 Teaspoon Sugar</h3>
+<h3>1 1/2 cups of Milk</h3>
+</header>
+</section>
+
+<!-- ==============================================END OF DRINKS=============================================== -->
+
+<!-- ==============================================SPECIALS MENU=============================================== -->
+
+<!-- BBQ Chicken Page -->
+<section id="page5-1" data-role="page">
+<header data-role="header">
+<h1><b><u>BBQ Chicken with Fries in the Side Recipe</u></b></h1>
+<p>
+<h3>1 Tablespoon cornflour</h3>
+<h3>1 Tablespoon cold water</h3>
+<h3>1/2 cup (125g) caster sugar</h3>
+<h3>1/2 cup soy sauce</h3>
+<h3>4 Tablespoon distilled cider vinegar</h3>
+<h3>1 clove garlic, finely chopped</h3>
+<h3>1/2 Teaspoon ground Ginger</h3>
+<h3>1/4 Teaspoon white Pepper</h3>
+<h3>Chicken Thighs</h3>
+<h3>Potato</h3>
+<h3>Fries</h3>
+<h3>Canola Oil</h3>
+</header>
+</section>
+
+<!-- Nasi Goreng Page -->
+<section id="page5-2" data-role="page">
+<header data-role="header">
+<h1><b><u>Nasi Goreng Recipe</u></b></h1>
+<p>
+<h3>2 cups SunRice White Long Grain Rice</h3>
+<h3>2 1/2 Tablespoons kecap manis</h3>
+<h3>1 Tablespoon Dark soy sauce</h3>
+<h3>1 Tablespoon sweet chillie sauce</h3>
+<h3>1/4 cup peanut oil</h3>
+<h3>Eggs</h3>
+<h3>Eggs Slightly beaten</h3>
+<h3>1 Brown onion, thinly sliced</h3>
+<h3>1 Teaspoon Sambal Olek</h3>
+<h3>3 Galic Cloves, finely chopped</h3>
+<h3>1 Teaspoon shrimp paste</h3>
+<h3>1 carrot peeled and finely chopped</h3>
+<h3>1 small chicken breast fillet</h3>
+<h3>300g green prawns, chopped</h3>
+<h3>3 green oinions</h3>
+<h3>1/4 small Chinese cabbage</h3>
+<h3>1/4 cup fried shallots</h3>
+<h3>Thinly sliced red chillies</h3>
+</header>
+</section>
+
+<!-- ==============================================END OF SPECIALS=============================================== -->
+
+<!-- ==============================================DESSERT MENU=============================================== -->
+
+<!-- Sponge Cake Page -->
+<section id="page3-1" data-role="page">
+<header data-role="header">
+<h1><b><u>Sponge Cake Recipe</u></b></h1>
+<p>
+<h3>8 eggs</h3>
+<h3>Pint of Salt</h3>
+<h3>330g caster sugar</h3>
+<h3>360g self raising flour</h3>
+<h3>120ml milk</h3>
+<h3>40g butter</h3>
+<h3>500g strawberries (Chopped)</h3>
+<h3>110g caster sugar</h3>
+<h3>500g PHILADELPHIA block cream cheese</h3>
+<h3>500ml strawberry puree</h3>
+<h3>3 teaspoons gelatine powder</h3>
+<h3>300ml whipped cream</h3>
+<h3>Olives</h3>
+</header>
+</section>
+
+<!-- Chocolate Brownie Cup Cake Page -->
+<section id="page3-2" data-role="page">
+<header data-role="header">
+<h1><b><u>Chocolate Brwonie Cup Cake Recipe</u></b></h1>
+<p>
+<h3>4 Ounces unsweetned Chocolate</h3>
+<h3>1/2 cup unsalted butter</h3>
+<h3>1 1/4 cup white sugar</h3>
+<h3>1 Teaspoon pure vanilla extract</h3>
+<h3>3 large eggs</h3>
+<h3>3/4 cup flour</h3>
+<h3>1/4 teaspoon salt</h3>
+<h3>1 cup confectioners sugar</h3>
+</header>
+</section>
+
+<!-- Swiss roll Page -->
+<section id="page3-3" data-role="page">
+<header data-role="header">
+<h1><b><u>Swiss Roll Recipe</u></b></h1>
+<p>
+<h3>Butter</h3>
+<h3>Eggs</h3>
+<h3>125g caster sugar</h3>
+<h3>1 Teaspoon Vanilla extract</h3>
+<h3>1/2 cup plain flour</h3>
+<h3>Icing Sugar</h3>
+<h3>480g Hero Raspberry Swiss Preserve</h3>
+<h3>Jelly</h3>
+</header>
+</section>
+
+<!-- Chocolate Cup cake Page -->
+<section id="page3-4" data-role="page">
+<header data-role="header">
+<h1><b><u>Chocolate Cup Cake with Fruits Recipe</u></b></h1>
+<p>
+<h3>4 Ounces unsweetned Chocolate</h3>
+<h3>1/2 cup unsalted butter</h3>
+<h3>1 1/4 cup white sugar</h3>
+<h3>1 Teaspoon pure vanilla extract</h3>
+<h3>3 large eggs</h3>
+<h3>3/4 cup flour</h3>
+<h3>1/4 teaspoon salt</h3>
+<h3>1 cup confectioners sugar</h3>
+<h3>Whipped Cream</h3>
+<h3>Banana</h3>
+<h3>Jam</h3>
+<h3>Raspberry</h3>
+<h3>Strawberry</h3>
+<h3>Oranges</h3>
+<h3>Kiwi</h3>
+<h3>Chocolate Chip Nuts</h3>
+</header>
+</section>
+
+<!-- Fruits with Whipped Cream Page -->
+<section id="page3-5" data-role="page">
+<header data-role="header">
+<h1><b><u>Fruits with Whipped Cream Recipe</u></b></h1>
+<p>
+<h3>Whipped Cream</h3>
+<h3>Banana</h3>
+<h3>Jam</h3>
+<h3>Raspberry</h3>
+<h3>Strawberry</h3>
+<h3>Oranges</h3>
+<h3>Kiwi</h3>
+<h3>Chocolate Syrup</h3>
+<h3>Chocolate Icing</h3>
+</header>
+</section>
+
+<!-- ==============================================END OF DESSERTS=============================================== -->
+
+<!-- ==============================================NUGGETS AND FRIES MENU=============================================== -->
+
+<!-- Nugget Sticks Page -->
+<section id="page2-1" data-role="page">
+<header data-role="header">
+<h1><b><u>Nugget Sticks Recipe</u></b></h1>
+<p>
+<h3>Chicken Breast</h3>
+<h3>Water</h3>
+<h3>Cereal Flour</h3>
+<h3>Vegetable oil</h3>
+<h3>Breadcrumbs</h3>
+<h3>Thickners</h3>
+<h3>Cereal Starches</h3>
+<h3>Salt</h3>
+<h3>Soy Protien</h3>
+<h3>Wheat Gluten</h3>
+<h3>Herbs and Spices</h3>
+<h3>Egg</h3>
+<h3>Garlic Powder</h3>
+<h3>Milk</h3>
+<h3>Yeast Extract</h3>
+</header>
+</section>
+
+<!-- Nugget Crunch Page -->
+<section id="page2-2" data-role="page">
+<header data-role="header">
+<h1><b><u>Nugget Crunch (Tender Crisp) Recipe</u></b></h1>
+<p>
+<h3>1 3/4 cups if breadcrumbs</h3>
+<h3>1 Tablespoon olive oil</h3>
+<h3>Egg</h3>
+<h3>1 Tablespoon mayonnaise</h3>
+<h3>1 1/2 Tablespoon dijon mustard</h3>
+<h3>2 Tablespoon flour</h3>
+<h3>1/2 Tablespoon Salt</h3>
+<h3>Black Pepper</h3>
+<h3>Oil Spray</h3>
+<h3>Chicken Tenderloins</h3>
+</header>
+</section>
+
+
+<!-- Crispy French Fries Page -->
+<section id="page2-3" data-role="page">
+<header data-role="header">
+<h1><b><u>Crispy French Fries Recipe</u></b></h1>
+<p>
+<h3>2 1/2 pounds russet potatoes</h3>
+<h3>Vegetable oil</h3>
+<h3>Sea Salt</h3>
+<h3>Ketchup</h3>
+<h3>Mayonnaise</h3>
+</header>
+</section>
+
+<!-- Regular Fries Page -->
+<section id="page2-4" data-role="page">
+<header data-role="header">
+<h1><b><u>Regular Fries Recipe</u></b></h1>
+<p>
+<h3>1kg red delight potatoes</h3>
+<h3>Vegetable oil</h3>
+<h3>1/2 Teaspoon sea salt</h3>
+<h3>1/4 Teaspoon cracked black pepper</h3>
+<h3>Aioli</h3>
+</header>
+</section>
+
+<!-- ==============================================END OF NUGGETS AND FRIES=============================================== -->
+
+<!-- =====================================================BURGERS MENU=============================================== -->
+
+<!-- Crispy Chicken Page -->
+<section id="page1-1" data-role="page">
+<header data-role="header">
+<h1><b><u>Crispy Chicken Burger Recipe</u></b></h1>
+<p>
+<h3>4 Chicken Breast</h3>
+<h3>3 Slices Whie Bread (Toasted)</h3>
+<h3>Egg</h3>
+<h3>1 Teaspoon Dijon Mustard</h3>
+<h3>Zest 1 Lemon</h3>
+<h3>4 Tablespoon reduced fat mayonnaise</h3>
+<h3>4 ciabatta buns</h3>
+<h3>Onions</h3>
+<h3>Tomato</h3>
+<h3>Lecttuce leaves</h3>
+</header>
+</section>
+
+<!-- Tender Beef Page -->
+<section id="page1-2" data-role="page">
+<header data-role="header">
+<h1><b><u>Tender Beef Burger Recipe</u></b></h1>
+<p>
+<h3>500g beef mince</h3>
+<h3>1 cup fresh breadcrumbs</h3>
+<h3>1 Brown Onions</h3>
+<h3>1 Tablespoon Worcestershire Sauce</h3>
+<h3>Eggs</h3>
+<h3>Bacon rashers</h3>
+<h3>Cheddar Cheese</h3>
+<h3>White Bread rolls</h3>
+<h3>Lecttuce leaves</h3>
+<h3>Tomato</h3>
+<h3>Beetroot slices</h3>
+<h3>Tomato Sauce</h3>
+</header>
+</section>
+
+<!-- Turkey Page -->
+<section id="page1-3" data-role="page">
+<header data-role="header">
+<h1><b><u>Turkey Burger Recipe</u></b></h1>
+<p>
+<h3>1 lb ground Turkey</h3>
+<h3>1/2 cup dry breadcrumbs</h3>
+<h3>Onions</h3>
+<h3>Ketchup</h3>
+<h3>1 Tablespoon Lemon Juice</h3>
+<h3>1 Teaspoon Worcestershire sauce</h3>
+<h3>1 Teaspoon soy sauce</h3>
+<h3>1/4 Teaspoon Parika</h3>
+<h3>Garlic Cloves</h3>
+<h3>Red Pepper</h3>
+<h3>Black Pepper</h3>
+<h3>Hamburger Buns</h3>
+</header>
+</section>
+
+<!-- Classic Beef Page -->
+<section id="page1-4" data-role="page">
+<header data-role="header">
+<h1><b><u>Classic Beef Burger Recipe</u></b></h1>
+<p>
+<h3>750g beef mince</h3>
+<h3>1 cup fresh breadcrumbs</h3>
+<h3>1 Brown Onions</h3>
+<h3>1 Tablespoon Worcestershire Sauce</h3>
+<h3>Eggs</h3>
+<h3>Bacon rashers</h3>
+<h3>Cheddar Cheese</h3>
+<h3>White Bread rolls</h3>
+<h3>Lecttuce leaves</h3>
+<h3>Tomato</h3>
+<h3>Black Pepper</h3>
+<h3>Tomato Sauce</h3>
+<h3>Garlic Cloves</h3>
+<h3>1 Teaspoon Tabasco Sauce</h3>
+<h3>Salt</h3>
+<h3>1/3 cup American Mustard</h3>
+<h3>1/4 cup chopped Fresh continental parsley</h3>
+</header>
+</section>
+
+<!-- Double Puffed Beef Page -->
+<section id="page1-5" data-role="page">
+<header data-role="header">
+<h1><b><u>Double Puffed Beef Burger Recipe</u></b></h1>
+<p>
+<h3>Olive Oil</h3>
+<h3>Brown Oinions</h3>
+<h3>Caster Sugar</h3>
+<h3>Balsamic Vinegar</h3>
+<h3>Provolone Cheese</h3>
+<h3>Wholegrain bread rolls</h3>
+<h3>Tomato Chutney</h3>
+<h3>Lettuce Leaves</h3>
+<h3>Oven-baked fries</h3>
+<h3>Milk</h3>
+<h3>White Bread</h3>
+<h3>500g beef mince</h3>
+<h3>Worcestershire sauce</h3>
+<h3>Dijon Mustard</h3>
+<h3>Thyme leaves</h3>
+<h3>Parsley Leaves</h3>
+</header>
+</section>
+
+<!-- ==============================================END OF BURGERS=============================================== -->
+
+<!-- =====================================================PIZZA MENU=============================================== -->
+
+<!-- Vegetable Pizza Page -->
+<section id="page0-1" data-role="page">
+<header data-role="header">
+<h1><b><u>Vegetable Pizza Recipe</u></b></h1>
+<p>
+<h3>Basic Pizza Dough</h3>
+<h3>Olive Oil</h3>
+<h3>Brown Onions</h3>
+<h3>Garlic Clove</h3>
+<h3>Zucchini</h3>
+<h3>Dried Tomatoes</h3>
+<h3>Shredded Fresh Basil Leaves</h3>
+<h3>Red Capsium</h3>
+<h3>Green Capsium</h3>
+<h3>Bocconcini Cheese</h3>
+<h3>Grated reduced fat mozzarella cheese</h3>
+<h3>Olives</h3>
+<h3>Cauliflower</h3>
+</header>
+</section>
+
+<!-- Spicy Chicken Pizza Page -->
+<section id="page0-2" data-role="page">
+<header data-role="header">
+<h1><b><u>Spicy Chicken Pizza Recipe</u></b></h1>
+<p>
+<h3>10 oz skinned and boned uncooked chicken</h3>
+<h3>Extra Virgin Olive Oil</h3>
+<h3>Fresh Lime Juice</h3>
+<h3>Jalapeno Peppers</h3>
+<h3>Garlic Clove</h3>
+<h3>Fresh Cilantro Leaves</h3>
+<h3>Kosher Salt</h3>
+<h3>Pizza Dough</h3>
+<h3>Tomato</h3>
+<h3>Onions</h3>
+<h3>Mozzarella Cheese</h3>
+<h3>Fontina Cheese</h3>
+<h3>Asian Eggplant</h3>
+<h3>Red and Yellow Bell Peppers</h3>
+<h3>Red Chillie</h3>
+</header>
+</section>
+
+<!-- ==============================================END OF PIZZAS=============================================== -->
+
+<!-- =====================================================SUBMIT FORM=============================================== -->
+
+<!-- Submission Form Page -->
+<section id="page69" data-role="page">
+<header data-role="header">
+<h1><b><u>SUBMISSION FORM</u></b></h1>
+<p>
+<h3>Thank you for your feedback. Your<br> 
+feedback has been recorded and will be<br> 
+used to serve you better next time...</h3>
+
+</header>
+</section>
+
+</body>
+</html>
